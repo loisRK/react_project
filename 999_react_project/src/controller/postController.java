@@ -18,7 +18,7 @@ public class postController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		
-		
+		System.out.println("커밋 테스트");
 		
 		
 		try {
