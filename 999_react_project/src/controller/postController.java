@@ -19,6 +19,7 @@ public class postController extends HttpServlet {
 
 		
 		System.out.println("커밋 테스트");
+		System.out.println("커밋 테스트");
 		
 		
 		try {
