@@ -17,6 +17,10 @@ import dto.postDTO;
 public class postController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		
+		
+		
+		
 		try {
 			ArrayList<postDTO> all = postDAO.getAllpost();
 			if (all != null) {
