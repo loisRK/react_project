@@ -19,6 +19,7 @@ public class postController extends HttpServlet {
 
 		System.out.println("이나현");
 		System.out.println("채근영");
+		System.out.println("채근영");
 		
 		
 		
