@@ -17,7 +17,7 @@ import dto.postDTO;
 public class postController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		System.out.println("이나현");
+		System.out.println("이나현22");
 		
 		
 		
