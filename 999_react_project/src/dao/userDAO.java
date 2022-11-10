@@ -35,27 +35,7 @@ public class userDAO {
 		return all;
 	}
 	
-	// 회원가입
-	public static ArrayList<userDTO> createUser(String userEmail, String userNickname, String userPw, String userName, Date userBirth, String userMbti) throws SQLException {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rset = null;
-		ArrayList<userDTO> all = null;
 
-		
-		try {
-			con = DBUtil.getConnection();
-			pstmt = con.PreparedStatement();			
-			rset = pstmt.executeQuery("INSERT INTO user VALUES ");
-			all = new ArrayList<userDTO> ();
-			
-			while (rset.next()) {
-				all.add(new userDTO(rset.getString(1), rset.getString(2), rset.getString(3), rset.getString(4), rset.getDate(5), rset.getInt(6), rset.getInt(7), rset.getInt(8), rset.getString(9)));
-			}
-		} finally {
-			DBUtil.close(con, stmt, rset);
-		}
-		return all;
 	}
 	
 	
@@ -83,4 +63,3 @@ public class userDAO {
 	
 	
 	
-}
