@@ -1,17 +1,18 @@
 package dao;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-
+import java.util.Date;
 
 import dto.userDTO;
 import util.DBUtil;
 
 public class userDAO {
-
+	// 모든 user 데이터 불러오기
 	public static ArrayList<userDTO> getAlluser() throws SQLException {
 		Connection con = null;
 		Statement stmt = null;
@@ -32,6 +33,33 @@ public class userDAO {
 			DBUtil.close(con, stmt, rset);
 		}
 		return all;
-	
 	}
-}
+	
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
